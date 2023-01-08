@@ -1,0 +1,17 @@
+button:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.navbar {
+    background-color: var(--beige) !important;
+}
+
+.navbar-brand {
+    padding: 1.5rem;
+    color: var(--teal) !important;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: var(--teal) !important;
+}

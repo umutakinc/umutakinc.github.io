@@ -1,0 +1,121 @@
+:root {
+    /* Colors */
+    --purple: #6C00FF;
+    --blue: #3C79F5;
+    --teal: #2DCDDF;
+    --beige: #F2DEBA;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: var(--teal);
+}
+
+.main-title {
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+}
+
+.custom-btn {
+    background-color: var(--teal);
+    color: #fff;
+    transition: all .5s;
+}
+
+.custom-btn:hover {
+    background-color: #fff;
+    color: var(--teal);
+}
+
+.map {
+    border-radius: 1rem;
+}
+
+.logo-text {
+    font-family: "Exo", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(219deg, 
+      var(--teal) 19%, 
+      transparent 19%,transparent 20%, 
+      var(--teal) 20%, var(--teal)  39%,
+      transparent 39%,transparent 40%, 
+      var(--teal),var(--teal) 59% ,
+      transparent 59%,transparent 60%, 
+      orange 60%, orange 79%,
+      transparent 79%, transparent 80%, 
+      orange 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    white-space: initial;
+}
+
+.logo-text, .nav-link {
+    transition: all .6s;
+}
+
+.logo-text:hover, .nav-link:hover {
+    scale: .85;
+}
+
+/* Banner */
+.banner {
+    height: 500px;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.banner .card-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+.banner .title {
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: .5rem;
+}
+
+.banner .description, .banner .phone-direction {
+    font-size: 1.5rem;
+}
+
+/* Gallery */
+.gallery-image {
+    margin-bottom: 1rem;
+}
+
+.gallery-image img {
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.gallery-image img:hover {
+    transform: scale(1.2);
+}
+
+/* Contact */
+.contact .phone-direction {
+    display: flex;
+    align-items: center;
+}
